@@ -1,0 +1,83 @@
+.header{
+    text-align: center;
+    background: rgb(28, 28, 75);
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.makan{
+    background: rgb(24, 24, 63);
+}
+
+.aku{
+    padding-top: 5px;
+}
+
+/* Layout container */
+.main-container {
+    display: grid;
+    grid-template-columns: 60% 38%;
+    gap: 2%;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0;
+    transition: ease 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* Aside styles */
+aside {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+aside .card {
+    width: 100%;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.nasi {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    
+    aside {
+        position: static;
+    }
+}
